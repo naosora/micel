@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>firebase phone number auth</title>
+        <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+        <script>
+            
+            var config = {
+            apiKey: "AIzaSyBUw-nKrGpCIki8D7AIEl9LYlV6aOYY4jA",
+            authDomain: "blogcris-57f2c.firebaseapp.com",
+            databaseURL: "https://blogcris-57f2c.firebaseio.com",
+            projectId: "blogcris-57f2c",
+            storageBucket: "blogcris-57f2c.appspot.com",
+            messagingSenderId: "495999445407"
+        };
+        firebase.initializeApp(config);
+
+        </script>
+        <style>
+            button { display: block; }
+        </style>
+    </head>
+    <body>
+
+        Ingrese su Numero Celular<input>
+        
+        <button onclick="auth()">Enviar</button>
+        <label>Autentificación:</label>
+        
+        <div id="recaptcha">
+
+           
+        </div>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
