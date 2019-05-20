@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <figure class="logo">
+                <img src="images/logo2.png" height="50" width="100">
+            </figure>
+            <nav class="menu">
+                <ol>
+                    <li>
+                        <a id="login">Iniciar Sesion
+
+                        </a>
+
+                    </li>
+                    <li>
+                        <a id="salir" onclick="salir()">Cerrar Sesion
+
+                        </a>
+                    </li>
+                    <li>
+
+
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <div id="divprincipal">
+        <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-2">
+                <div>
+                    <img src="images/facebook.png" height="50" width="100" onclick="lface()" class="img">
+                </div>
+                <div>
+                    <img src="images/chrome.jpg" height="50" width="100" onclick="login2()" class="img">
+                </div>
+
+                <div>
+                    <img src="images/twiter.png" height="50" width="100" onclick="ltwitter()"class="img">
+                </div>
+            </div>
+            <div class="col-3">
+
+                <div class="container">
+                    <div >
+
+                        <div id="login_div" class="main-div">
+                            <h3>Iniciar Sesion</h3>
+                            Correo Electronico<br>
+                            <input type="text" placeholder="usuario@example.com" id="email_field"  class="cajatext"/><br>
+                            Contraseña<br>
+                            <input type="password" placeholder="********" id="password_field" class="cajatext"/><br>
+
+                            <table>
+                                <tr>
+                                    <th><button onclick="login()" class="boton">Ingresar</button></th>
+                                    <th><button onclick="registrar()"class="boton">Registrar</button></th>
+                                </tr>
+                            </table>
+
+
+                        </div>
+
+                        <div id="user_div" class="loggedin-div">
+                            <p id="user_para" class="h1">Session Iniciada</p>
+                            <button onclick="logout()">Cerrar Session</button>
+                            <!-- <input type="submit" onclick="logout()" value="logout" />-->
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Initialize Firebase0
+        var firebaseConfig = {
+    apiKey: "AIzaSyDMBdfW552kZooNZoWIoVZJOt36MT7M3-E",
+    authDomain: "exaprac2.firebaseapp.com",
+    databaseURL: "https://exaprac2.firebaseio.com",
+    projectId: "exaprac2",
+    storageBucket: "exaprac2.appspot.com",
+    messagingSenderId: "613808977154",
+    appId: "1:613808977154:web:a45a56208d8dcb11"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+    </script>
+    <!--autenticacion-->
+    <script src="js/scrip.js"></script>
+</body>
+
+</html>
