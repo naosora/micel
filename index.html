@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>firebase phone number auth</title>
-        <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
-        <script>
-            
-            var config = {
+
+<head>
+    <title>firebase phone number auth</title>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script>
+
+        var config = {
             apiKey: "AIzaSyBUw-nKrGpCIki8D7AIEl9LYlV6aOYY4jA",
             authDomain: "blogcris-57f2c.firebaseapp.com",
             databaseURL: "https://blogcris-57f2c.firebaseio.com",
@@ -15,24 +19,25 @@
         };
         firebase.initializeApp(config);
 
-        </script>
-        <style>
-            button { display: block; }
-        </style>
-    </head>
-    <body>
+    </script>
+    <style>
+        button {
+            display: block;
+        }
+    </style>
+</head>
 
-        Ingrese su Numero Celular<input>
-        
-        <button onclick="auth()">Enviar</button>
-        <label>Autentificación:</label>
-        
-        <div id="recaptcha">
+<body>
 
-           
-        </div>
+    Ingrese su Numero Celular<input>
+
+    <button onclick="auth()">Enviar</button>
+    <label>Autentificación:</label>
+
+    <div id="recaptcha-container"></div>
 
 
-        <script src="index.js"></script>
-    </body>
+    <script src="index.js"></script>
+</body>
+
 </html>
