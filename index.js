@@ -1,4 +1,4 @@
-var recaptcha = new firebase.auth.RecaptchaVerifier('recaptcha');
+var recaptcha = new firebase.auth.RecaptchaVerifier('recaptcha-container');
 
 function auth(){
 
