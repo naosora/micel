@@ -1,0 +1,184 @@
+.header {
+    background-color: #21a316;
+    color: white;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  
+  
+  .header a {
+    color: white;
+    text-decoration: none;
+  }
+  .menu {
+    height: inherit;
+    font: bold;
+    
+    font-family: Arial;
+  }
+  .header ol {
+    display: flex;
+    height: inherit;
+  }
+  .header ol li {
+    height: inherit;
+  }
+  .header a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+  }
+  .container {
+
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+  }
+
+.img{
+  padding: 20px 20px 20px 20px;
+  
+}
+
+
+
+.cajatext{
+  border: 1px solid rgb(136, 133, 133);
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color :#000000;
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 13px;
+  box-sizing: border-box;
+  line-height: 22px;
+  margin: 0;
+  text-align: left;
+  width: 400px;
+ 
+ 
+}
+.boton{
+border: 1px solid #21a316;
+   border-radius: 4px;
+   background-color: #21a316;
+   background-image: none;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 20px;
+  color: white;
+   
+   width: 200px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+#divprincipal
+{
+   box-sizing: border-box;
+   padding: 50px 15px 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
+     
+   font-family: Arial;
+}
+#divprincipal .row
+{
+   margin-right: 15px;
+   margin-left: 15px;
+  
+}
+
+
+#divprincipal > .row > .col-1
+{
+   background-color: transparent;
+
+   border: 0px solid #FFFFFF;
+   width: 25%;
+   text-align: left;
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+   float: left;
+}
+#divprincipal > .row > .col-2
+{
+   background-color: transparent;
+  
+   border: 2px solid rgb(139, 136, 136);
+   width: 16.66666667%;
+   text-align: center;
+   box-sizing: border-box;
+   font-size: 20px;
+
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+   float: left;
+}
+#divprincipal > .row > .col-3
+{
+   background-color: transparent;
+ 
+  
+   width: 33.33333333%;
+   text-align: left;
+   box-sizing: border-box;
+   font-size: 20px;
+   
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+   float: left;
+}
+#divprincipal > .row > .col-4
+{
+   background-color: transparent;
+  
+   border: 0px solid #FFFFFF;
+   width: 25%;
+   text-align: left;
+   box-sizing: border-box;
+   
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+   float: left;
+}
+
+@media (max-width: 480px)
+{
+#divprincipal > .row > .col-1, #divprincipal > .row > .col-2, #divprincipal > .row > .col-3, #divprincipal > .row > .col-4
+{
+   float: none;
+   width: 100% !important;
+}
+}
